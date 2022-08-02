@@ -27,9 +27,9 @@ tasks.withType<KotlinCompile> {
 
 compose.desktop {
     application {
-        mainClass = "MainKt"
+        mainClass = "com.jyn.kotlin.MainKt"
         nativeDistributions {
-            targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
+            targetFormats(TargetFormat.Exe, TargetFormat.Dmg, TargetFormat.Deb)
             packageName = "KotlinDesktop"
             packageVersion = "1.0.0"
         }
