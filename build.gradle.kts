@@ -11,6 +11,8 @@ group = "com.jyn.kotlin"
 version = "1.0.0"
 
 repositories {
+    mavenCentral()
+    maven("https://maven.aliyun.com/repository/public")
     maven("https://maven.aliyun.com/repository/google")
     maven("https://maven.aliyun.com/repository/central")
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
@@ -18,6 +20,7 @@ repositories {
 
 dependencies {
     implementation(compose.desktop.currentOs)
+//    implementation("androidx.navigation:navigation-compose:2.5.0")
     compileOnly("org.jetbrains.compose:compose-gradle-plugin:1.1.1")
 }
 
